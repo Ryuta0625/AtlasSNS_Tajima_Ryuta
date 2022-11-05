@@ -1,8 +1,8 @@
 @extends('layouts.logout')
 
 @section('content')
-
-{!! Form::open() !!}
+<!-- ファサードはデフォでpost通信 -->
+{!! Form::open(['url' => '/register']) !!}
 
 <h2>新規ユーザー登録</h2>
 
