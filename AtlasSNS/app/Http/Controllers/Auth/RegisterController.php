@@ -87,5 +87,10 @@ class RegisterController extends Controller
 
     public function added(){
         return view('auth.added');
+        redirect('auth.added')->with('username', $user);
     }
+
+    // public function added(){
+    //     redirect('auth.added')->with('username', $user);
+    // }
 }
