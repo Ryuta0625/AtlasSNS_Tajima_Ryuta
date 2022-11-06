@@ -30,11 +30,15 @@ Route::get('/added', 'Auth\RegisterController@added');
 Route::post('/added', 'Auth\RegisterController@added');
 
 //ログイン中のページ
-Route::get('/top','PostsController@index');
+Route::group(['middleware' => 'auth'], function () {
 
-Route::get('/profile','UsersController@profile');
+  Route::get('/top','PostsController@index');
 
-Route::get('/search','UsersController@index');
+  Route::get('/profile','UsersController@profile');
 
-Route::get('/follow-list','PostsController@index');
-Route::get('/follower-list','PostsController@index');
+  Route::get('/search','UsersController@index');
+
+  Route::get('/follow-list','PostsController@index');
+  Route::get('/follower-list','PostsController@index');
+
+});
