@@ -18,6 +18,8 @@
     <!--iphoneのアプリアイコン指定-->
     <link rel="apple-touch-icon-precomposed" href="画像のURL" />
     <!--OGPタグ/twitterカード-->
+
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -27,11 +29,16 @@
                 <div id="">
                     <p>〇〇さん<img src="images/arrow.png"></p>
                 <div>
-                <ul>
-                    <li><a href="/top">ホーム</a></li>
-                    <li><a href="/profile">プロフィール</a></li>
-                    <li><a href="/logout">ログアウト</a></li>
-                </ul>
+                <nav class="menu">
+                    <li>
+                        <a href=""></a>
+                        <ul>
+                            <li><a href="/top">ホーム</a></li>
+                            <li><a href="/profile">プロフィール</a></li>
+                            <li><a href="/logout">ログアウト</a></li>
+                        </ul>
+                    </li>
+                </nav>
             </div>
         </div>
     </header>
