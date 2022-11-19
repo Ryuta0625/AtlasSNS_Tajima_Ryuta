@@ -24,6 +24,7 @@ header {
     border-left: 1px solid #727272;
 }
 
+/* アコーディオン メニュー */
 .menu a {
     color: #727272;
     text-decoration: none;
@@ -40,11 +41,12 @@ header {
 }
 
 .menu>li>a::after {
-    content: 'v';
+    content: '>';
+    transform: rotate(90deg);
 }
 
 .menu>li>a.active::after {
-    content: '^';
+    transform: rotate(-90deg);
 }
 
 .menu>li>ul a {
