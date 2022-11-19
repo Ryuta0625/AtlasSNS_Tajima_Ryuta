@@ -25,53 +25,7 @@ header {
 }
 
 /* アコーディオン メニュー */
-.menu a {
-    color: #727272;
-    text-decoration: none;
-    padding: 10px;
-    display: block;
-    background-color: #eee;
-    transition: 3s;
-}
-
-.menu>li>a {
-    display: block;
-    padding: 10px;
-    background-color: #eee;
-}
-
-.menu>li>a::after {
-    content: '>';
-    transform: rotate(90deg);
-}
-
-.menu>li>a.active::after {
-    transform: rotate(-90deg);
-}
-
-.menu>li>ul a {
-    padding: 10px;
-    display: block;
-    background-color: #727272;
-}
-
-.menu a:hover {
-    opacity: 0.7;
-}
-
-.menu ul {
+.drawer-list {
     display: none;
-}
-
-.menu ul.active {
-    display: block;
-}
-
-.menu {
-    max-width: 100px;
-    width: 100%;
-    margin: 50px auto;
-    background-color: #eee;
-    padding: 20px;
-    border-radius: 5px;
+    font-size: 15px;
 }

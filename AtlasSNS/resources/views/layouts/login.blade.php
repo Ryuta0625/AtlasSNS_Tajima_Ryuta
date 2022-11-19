@@ -19,25 +19,25 @@
     <link rel="apple-touch-icon-precomposed" href="画像のURL" />
     <!--OGPタグ/twitterカード-->
 
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="./script.js" defer></script>
 </head>
 <body>
     <header>
         <div id = "head">
-        <h1><a href="/top"><img src="images/logo.png"></a></h1>
+        <h1><a href="/top"><img src="images/atlas.png"></a></h1>
             <div id="">
                 <div id="">
                     <p>〇〇さん<img src="images/arrow.png"></p>
                 <div>
                 <nav class="menu">
-                    <li>
-                        <a href=""></a>
-                        <ul>
-                            <li><a href="/top">ホーム</a></li>
-                            <li><a href="/profile">プロフィール</a></li>
-                            <li><a href="/logout">ログアウト</a></li>
-                        </ul>
-                    </li>
+                    <a href="#" class="drawer">ドロワーデモ</a>
+                    <ul class="drawer-list">
+                        <li><a href="/top">ホーム</a></li>
+                        <li><a href="/profile">プロフィール</a></li>
+                        <li><a href="/logout">ログアウト</a></li>
+                    </ul>
                 </nav>
             </div>
         </div>
