@@ -21,7 +21,7 @@
 
     <link rel="stylesheet" href="./style.css">
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script src="./script.js" defer></script>
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <header>
@@ -32,7 +32,7 @@
                     <p>〇〇さん<img src="images/arrow.png"></p>
                 <div>
                 <nav class="menu">
-                    <a href="#" class="drawer">ドロワーデモ</a>
+                    <a href="#" class="drawer"></a>
                     <ul class="drawer-list">
                         <li><a href="/top">ホーム</a></li>
                         <li><a href="/profile">プロフィール</a></li>

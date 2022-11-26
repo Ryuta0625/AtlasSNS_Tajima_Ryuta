@@ -29,3 +29,13 @@ header {
     display: none;
     font-size: 15px;
 }
+
+.menu>a::after {
+    content: '>';
+    transform: rotate(90deg);
+}
+
+.menu>a.active::after {
+    content: '>';
+    transform: rotate(-90deg);
+}
