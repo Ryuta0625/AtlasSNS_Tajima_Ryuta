@@ -25,17 +25,51 @@ header {
 }
 
 /* アコーディオン メニュー */
+.menu {
+    position: absolute;
+    left: 80%;
+    top: 0;
+    width: 20%;
+}
+
 .drawer-list {
     display: none;
     font-size: 15px;
 }
 
 .menu>a::after {
-    content: '>';
-    transform: rotate(90deg);
+    content: 'v';
+    font-size: 50px;
+    /* transform: rotate(90deg); */
 }
 
 .menu>a.active::after {
-    content: '>';
-    transform: rotate(-90deg);
+    content: '^';
+    font-size: 50px;
+    /* transform: rotate(-90deg); */
+}
+
+/* ボタン */
+.btn {
+    display: inline-block;
+    background: #186AC9;
+    /* 背景色 */
+    color: #fff;
+    /* 文字色 */
+    padding: 10px 15px;
+    /* 上下の余白、左右の余白 */
+    text-decoration: none;
+    /* デフォルトで入るリンクの下線を消す */
+    border-radius: 10px;
+    /* 角を丸くする */
+    transition-property: opacity;
+    -webkit-transition-property: opacity;
+    transition-duration: .5s;
+    -webkit-transition-duration: .5s;
+    /* ホバーエフェクト */
+}
+
+/* ホバーエフェクト */
+.btn:hover {
+    opacity: .7;
 }
