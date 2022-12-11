@@ -73,3 +73,7 @@ header {
 .btn:hover {
     opacity: .7;
 }
+
+.btn-success {
+    padding: 10px 15px;
+}
