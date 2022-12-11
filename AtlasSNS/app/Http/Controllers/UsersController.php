@@ -13,4 +13,5 @@ class UsersController extends Controller
     public function search(){
         return view('users.search');
     }
+    // users.search usersの中にあるsearchのファイル
 }
