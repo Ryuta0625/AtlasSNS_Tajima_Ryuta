@@ -14,6 +14,7 @@ class User extends Authenticatable
      *
      * @var array
      */
+    // laravel モデル $fillable 検索　解説とか
     protected $fillable = [
         'username', 'mail', 'password',
     ];
