@@ -69,6 +69,8 @@ header {
     /* ホバーエフェクト */
 }
 
+/* .btn-success {} */
+
 /* ホバーエフェクト */
 .btn:hover {
     opacity: .7;
