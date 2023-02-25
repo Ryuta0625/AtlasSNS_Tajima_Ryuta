@@ -69,7 +69,29 @@ header {
     /* ホバーエフェクト */
 }
 
-/* .btn-success {} */
+button {
+    width: auto;
+    padding: 0;
+    margin: 0;
+    background: none;
+    border: 0;
+    font-size: 0;
+    line-height: 0;
+    overflow: visible;
+    cursor: pointer;
+    transition-property: opacity;
+    -webkit-transition-property: opacity;
+    transition-duration: .5s;
+    -webkit-transition-duration: .5s;
+}
+
+button img {
+    display: block;
+}
+
+.btn-success {
+    width: 30px;
+}
 
 /* ホバーエフェクト */
 .btn:hover {
