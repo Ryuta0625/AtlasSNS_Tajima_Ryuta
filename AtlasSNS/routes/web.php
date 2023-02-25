@@ -44,4 +44,8 @@ Route::group(['middleware' => 'auth'], function () {
   Route::get('/logout', 'Auth\LoginController@logout');
 
   Route::post('/create','PostsController@create');
+
+  Route::post('/post/update', 'PostsController@update');
+
+  Route::get('post/{id}/delete', 'PostsController@delete');
 });
