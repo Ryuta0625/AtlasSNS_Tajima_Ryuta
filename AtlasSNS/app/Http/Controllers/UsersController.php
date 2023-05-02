@@ -29,19 +29,22 @@ class UsersController extends Controller
         //自分以外を表示させる
         //if文は検索ワードがあったら表示されるやつ
     $keyword = $request->input('keyword');
-
+// dd($request);
     // もしキーワードが入力されている場合は、検索結果を取得する
-    if ($keyword) {
-        $users = User::where('name', 'like', '%'.$keyword.'%')
-                    ->orWhere('email', 'like', '%'.$keyword.'%')
+    if (!empty($keyword)) {
+        $users = User::where('username', 'like', '%'.$keyword.'%')
+                    ->orWhere('mail', 'like', '%'.$keyword.'%')
                     ->where('id', '!=', Auth::id())
                     ->get();
     } else {
         // キーワードが入力されていない場合は、ログインユーザー以外のすべてのユーザーを取得する
         $users = User::where('id', '!=', Auth::id())->get();
+        // デバック関数
+        // dd($);
+
     }
 
-    return view('search', compact('users', 'keyword'));
+    return view('users.search', compact('users', 'keyword'));
     }
 
 
